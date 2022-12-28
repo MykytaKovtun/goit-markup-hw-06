@@ -405,17 +405,19 @@
               </li>
             </ul>
           </div>
-          <form class="mailing-form" action="#">
-            <label class="paragraf-form" for="email">Підпишіться на розсилку</label>
-            <input class="email-form" type="email" placeholder="E-mail">
-            <div class="button-fotter">
-              <button type="submit">Підписатися</button>
-              <svg width="24" height="24">
-                <use href="./images/icons/symbol-defs.svg#send"></use>
-              </svg>
-            </div>
+          <div class="mailing">
+            <p class="mailing-paragraf">Підпишіться на розсилку</p>
+            <form class="mailing-form">
+              <input class="mailing-form-inpute" type="email" placeholder="E-mail">
+              <button class="mailing-button-item" type="submit">Підписатися
+                <svg class="mailing-button-icon" width="24" height="24">
+                  <use href="./images/icons/symbol-defs.svg#send"></use>
+                </svg>
+              </button>
 
-          </form>
+            </form>
+          </div>
+          
         </div>
         
         
@@ -454,9 +456,13 @@
               </div>
               <label class="form-label" for="coment">Коментар</label>
               <textarea class="form-textarea" name="coment" id="coment" placeholder="Введіть текст"></textarea>
-              <div class="form-checkbox">
-                <input type="checkbox" name="policy" id="policy">
-                <label for="policy">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label>
+              <div class="form-checkbox checkbox">
+                <input class="form-checkbox-inpute" type="checkbox" name="policy" id="policy">
+                <svg class="form-checkbox-icon" width="15" height="15">
+                  <use href="./images/icons/symbol-defs.svg#icon-checkbox"></use>
+                </svg>
+                <label class="form-checkbox-label" for="policy">Погоджуюся з розсилкою та приймаю <a class="form-checkbox-link"
+                    href="">Умови договору</a></label>
               </div>
               <button class="form-button" type="submit">Відправити</button>
             </form>
